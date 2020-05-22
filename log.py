@@ -8,8 +8,9 @@
 
 def log(x, n):
 
-    x = int(x) # Apparently all integers in Python 3.x are converted to long by default, and so this int cast does not cost us precision
+    x = float(x) 
     n = int(n)
+
     if x <= 0:
         print("Error: Illegal argument. Value not in domain") # Domain restricted to positive reals
         return None
